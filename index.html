@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по БАЗЕ ДАННЫХ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<style>
+    .form-control[type=text]:valid {
+        color: green
+    }
+    .form-control[type=text]:invalid {
+         color: red
+    }
+    .info{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .form-row{
+        margin: 5px;
+        padding-top: 20px;
+    }
+
+    p {
+        margin: 0;
+        padding: 0 0 5px 0; // Отступ 10px снизу
+    }
+</style>
+
+<div class="container">
+
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input name="req" type="text" class="form-control" pattern="{4,50}"
+                       autofocus required title="Введите от 4 до 50 символов" placeholder="RU/EN symbols">
+            </div>
+            <div class="col">
+                <form action="https://google.com">
+                    <input type="submit" class="btn btn-primary" value="Проверить">
+                </form>
+            </div>
+
+        </div>
+        {{ text }}
+
+    </form>
+
+</div>
